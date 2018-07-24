@@ -1,0 +1,8 @@
+Project Bus-Mall
+User-Stories 
+
+The Marketing Research Team: As part of the marketing research team, I want to be able to take in and analyze data in order to determine what the focus group is interested in. This data will help us decide which products we will include in our SkyMall catalog. This will ensure that our passengers will have a catalog to browse through with enjoyable content in order to ease the dreary time spent traveling.
+
+The developer: As a developer, I want to be able to call 3 random images to the screen and have them show up side by side by side. This will create the simplelist and most efficeint interface for our focus group. Once the random images appear, I want the user to be able to pick one of the three objects that they enjoy most. As the developer, I want to be able to track which of the photos was chosen and create a tracker that tracks how many times each photo is chosen. After one set of images, another three random photos will be generated for the user to view. I want this process to occur no more than 25 times. This process will allow sufficient feedback for our Marketing Research Team to determine which products will be used in the actual catalog.
+
+Focus group: As part of the focus group, I want a seamless interaction with the program that provides three clear images side by side with the ability to click on my favorite one. It would be cool if the images were interactive too, maybe spin or flip once you click them. After an image is chosen, I want three more random images to show up in the same fashion. It would be nice to see the total votes that I had at the conclusion of this test.
