@@ -14,6 +14,8 @@ function CatalogImages(imgName, imgPath) {
   this.totalTimesShown = 0;
   imageInfo.push(this);
 }
+
+
 // Creating a new instance for each of the images in the img folder
 
 new CatalogImages('Bag','img/bag.jpg');
@@ -41,16 +43,18 @@ new CatalogImages('Wine Glass','img/wine-glass.jpg');
 
 
 //Linking the image elements on index.html 
-var firstRandoImgEl = document.getElementById('firstRandoImg');
-var secondRandoImgEl = document.getElementById('secondRandoImg');
-var thirdRandoImgEl = document.getElementById('thirdRandoImg');
+// var firstRandoImgEl = document.getElementById('firstRandoImg');
+// var secondRandoImgEl = document.getElementById('secondRandoImg');
+// var thirdRandoImgEl = document.getElementById('thirdRandoImg');
 
 // Function to generate the three random images to be displayed 
 function genRandomImage() {
   var randomImage1 = Math.floor(Math.random() * imageInfo.lenth);
   var randomImage2 = Math.floor(Math.random() * imageInfo.length);
   var randomImage3 = Math.floor(Math.random() * imageInfo.length);
-  
-
+  console.log(randomImage1, randomImage2, randomImage3);
+  console.log(genRandomImage);
 
 }
+
+genRandomImage();
