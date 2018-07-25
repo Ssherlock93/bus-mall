@@ -2,8 +2,8 @@
 
 //Global variable for total amount of times each image has been chosen
 
-//var totalClicks = 0;
 var imageInfo = [];
+
 
 //Constructor function to add all of the image data 
 
@@ -29,7 +29,7 @@ new CatalogImages('Cthulhul','img/cthulhu.jpg');
 new CatalogImages('Dog','img/dog-duck.jpg');
 new CatalogImages('Dragon','img/dragon.jpg');
 new CatalogImages('Pen','img/pen.jpg');
-new CatalogImages('Pet','img/pet.jpg');
+new CatalogImages('Pet','img/pet-sweep.jpg');
 new CatalogImages('Scissors','img/scissors.jpg');
 new CatalogImages('Shark','img/shark.jpg');
 new CatalogImages('Sweep','img/sweep.png');
@@ -79,7 +79,9 @@ function genRandomImage() {
   firstRandoImg.title = imageInfo[randomIndex[0]].imgName;
   secondRandoImg.title = imageInfo[randomIndex[1]].imgName;
   thirdRandoImg.title = imageInfo[randomIndex[2]].imgName;
-
+  imageInfo[randomIndex[0]].totalTimesShown++;
+  imageInfo[randomIndex[1]].totalTimesShown++;
+  imageInfo[randomIndex[2]].totalTimesShown++;
 
   genRandomImage();
 

@@ -1,9 +1,17 @@
 div {
-  border: 2px solid gray;
+  border: 15px solid yellow;
 }
 
 img {
-  border: 1px solid black;
+  border: 5px solid black;
   margin: 5%;
   width: 20%;
+  border-radius: 100px;
+}
+h1 {
+  font-size: 35px;
+  
+}
+body {
+  background-color: aqua;
 }
