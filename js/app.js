@@ -109,3 +109,6 @@ function genRandomImage() {
 }
 genRandomImage();
 // container.addEventListener('click', clicksCount);
+
+
+//Add chart to show results of the bus-mall test
