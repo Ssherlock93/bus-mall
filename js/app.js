@@ -3,9 +3,9 @@
 //Global variable for total amount of times each image has been chosen
 
 var imageInfo = [];
+var totalVotes = 0;
 
-
-//Constructor function to add all of the image data 
+//Constructor function to add all of the image data
 
 function CatalogImages(imgName, imgPath) {
   this.imgName = imgName;
@@ -40,20 +40,20 @@ new CatalogImages('WaterCan','img/water-can.jpg');
 new CatalogImages('Wine Glass','img/wine-glass.jpg');
 
 function randomProductgen() {
-  return Math.floor(Math.random() * imageInfo.length); 
+  return Math.floor(Math.random() * imageInfo.length);
 }
 
 
 
-//Linking the image elements on index.html 
+//Linking the image elements on index.html
 var firstRandoImg = document.getElementById('firstRandoImg');
 var secondRandoImg = document.getElementById('secondRandoImg');
 var thirdRandoImg = document.getElementById('thirdRandoImg');
-// var container = document.getElementById('container');
+var container = document.getElementById('container');
 
 
 
-// Function to generate the three random images to be displayed 
+// Function to generate the three random images to be displayed
 function genRandomImage() {
   var randomIndex = [];
   randomIndex[0] = (randomProductgen());
@@ -83,8 +83,29 @@ function genRandomImage() {
   imageInfo[randomIndex[1]].totalTimesShown++;
   imageInfo[randomIndex[2]].totalTimesShown++;
 
+  function clicksCount(event) {
+    if (event.target.id === 'container');
+    return alert('Click on an image');
+  }
+  for (var i = 0; i < imageInfo.length; i++) {
+    if (event.target.title === imageInfo[i].imgName) {
+      imageInfo[i].totalVotes++;
+      console.log(totalVotes, 'Total votes');
+    }
+  }
+  this.imgTotalClicks++;
+  console.log(this.imgTotalClicks, 'Total Clicks');
+
+  if (this.imgTotalClicks > 25) {
+    alert('Sorry, you have reached the limit for clicks');
+    container.removeEventListener('click', clicksCount);
+
+  }
+
+
   genRandomImage();
 
 
 }
 genRandomImage();
+// container.addEventListener('click', clicksCount);
