@@ -102,6 +102,9 @@ function genRandomImage() {
 
   }
 
+  // Attempt to stringify data in order to store it to localStorage
+  var stringData = JSON.stringify(imageInfo)
+  localStorage.setItem('imageInfo' stringData);
 
   genRandomImage();
 
@@ -112,3 +115,5 @@ genRandomImage();
 
 
 //Add chart to show results of the bus-mall test
+
+// 
